@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PHP_PDO_Eample</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="grid.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <!--popup section start-->
+  <div class="test" id="test-id" onclick="popin()">
+    <div class="container popups" id="popup">
+      <div class="left col">
+      </div>
+      <div class="right col">
+      </div>
+    </div>
+  </div>
+  <!-- popup section finish -->
+  <div class="container rev-container container-height">
+    <div class="row below">
+      <div class="row row-custom back-img">
+        <div class="header-content">
+          <span class="center-align">DO YOU HAVE WHAT IT TAKES TO BE A GENIUS?</span>
+          <span class="center-align">HERE'S WHAT YOU NEED</span>
+        </div>
+      </div>
+      <div class="row row-custom row-flex-bottom">
+        <span class="center-align thin">JACK DANIEL</span>
+      </div>
+    </div>
+
+    <div class="row upper">
+      <div class="hexagon">
+        <div class="hexagon-inside">
+          <div class="hexagon-image"></div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="container second-section">
+    <div class="row"><span class="center-align thin">MEET MORE GENIUSES</span></div>
+    <div class="row"><span class="center-align thin">JOIN OUR EPIC CAFE</span></div>
+    <div class="row">
+
+      <section id="section" onclick="popup(event)">
+
+        <article id="article1">
+          <img src="ASSETS/hex.png" class="img-in">
+          <div class="inside">
+            <h1>NAME</h1>
+            <p>DISCRIPTION</p>
+          </div>
+          <div class="click-area"></div>
+        </article>
+        <article id="article2">
+          <img src="ASSETS/hex.png" class="img-in">
+          <div class="inside">
+            <h1>NAME</h1>
+            <p>DISCRIPTION</p>
+          </div>
+          <div class="click-area"></div>
+        </article>
+        <article>
+        </article>
+        <article id="article4">
+          <img src="ASSETS/hex.png" class="img-in">
+          <div class="inside">
+            <h1>NAME</h1>
+            <p>DISCRIPTION</p>
+          </div>
+          <div class="click-area"></div>
+        </article>
+        <article id="article5">
+          <img src="ASSETS/hex.png" class="img-in">
+          <div class="inside">
+            <h1>NAME</h1>
+            <p>DISCRIPTION</p>
+          </div>
+          <div class="click-area"></div>
+        </article>
+        <article id="article6">
+          <img src="ASSETS/hex.png" class="img-in">
+          <div class="inside">
+            <h1>NAME</h1>
+            <p>DISCRIPTION</p>
+          </div>
+          <div class="click-area"></div>
+        </article>
+        <article id="article7">
+          <img src="ASSETS/hex.png" class="img-in">
+          <div class="inside">
+            <h1>NAME</h1>
+            <p>DISCRIPTION</p>
+          </div>
+          <div class="click-area"></div>
+        </article>
+        <article id="article8">
+          <img src="ASSETS/hex.png" class="img-in">
+          <div class="inside">
+            <h1>NAME</h1>
+            <p>DISCRIPTION</p>
+          </div>
+          <div class="click-area"></div>
+        </article>
+        <article id="article9">
+          <img src="ASSETS/hex.png" class="img-in">
+          <div class="inside">
+            <h1>NAME</h1>
+            <p>DISCRIPTION</p>
+          </div>
+          <div class="click-area"></div>
+        </article>
+        <article id="article10">
+          <img src="ASSETS/hex.png" class="img-in">
+          <div class="inside">
+            <h1>NAME</h1>
+            <p>DISCRIPTION</p>
+          </div>
+          <div class="click-area"></div>
+        </article>
+        <article>
+
+        </article>
+        <article id="article12">
+          <img src="ASSETS/hex.png" class="img-in">
+          <div class="inside">
+            <h1>NAME</h1>
+            <p>DISCRIPTION</p>
+          </div>
+          <div class="click-area"></div>
+        </article>
+      </section>
+
+
+
+      <svg width="0" height="0">
+        <defs>
+          <clipPath id="hexagono" clipPathUnits="objectBoundingBox">
+            <polygon points=".25 0, .75 0, 1 .5, .75 1, .25 1, 0 .5" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div class="button-space" id="button-space-id">
+      <a href="#display" class="button-dummy" onclick="make_it_visible()">MAKE ME A GENIUS</a>
+    </div>
+  </div>
+
+  <div class="container abs-container" style="height: auto;">
+    <form id="display">
+      <input type="text" id="firstname" placeholder="firstname">
+      <input type="text" id="lastname" placeholder="lastname">
+      <select id="selected">
+        <option value="" selected disabled hidden>Why am I a Genius?</option>
+        <option value="option1">option1</option>
+        <option value="option2">option2</option>
+        <option value="option3">option3</option>
+      </select>
+      <input class="submit button-dummy" type="button" onclick="check()" value="MAKE ME A GENIUS">
+    </form>
+  </div>
+
+  <div id="thank-you" class="container button-space" style="display:none;">
+    <span class="center-align" style="color:black;">Thank You For Your Submission</span>
+  </div>
+  <footer class="container rev-container footer-container">
+    <div class="header-content" style="width:80%;left:10%;background-color:#00A298">
+      <span class="left-align">T&CS</span>
+      <span class="left-align">I SOLUMNLY SWEAR I'M UP TO NO GOOD</span>
+      <span class="left-align">I WILL USE THIS MEMBERSHIP TO DO EPIC SHIT</span>
+      <span class="left-align">I WILL MAKE OTHERS DO EPIC SHIT</span>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
