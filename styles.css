@@ -45,7 +45,7 @@ html,body{
 
 
 .back-img{
-	background-image: url("TESTASSETS/TESTASSETS/banner.jpg");
+	background-image: url("ASSETS/banner.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: scroll;
@@ -239,7 +239,7 @@ form input,select {
 	width:100%;
 	height: 100%;
 	background-color: #5cbbe2;
-	background-image: url("TESTASSETS/TESTASSETS/hex.png");
+	background-image: url("ASSETS/hex.png");
 	background-position: center;
 	background-size: 55%;
 	background-repeat: no-repeat;
